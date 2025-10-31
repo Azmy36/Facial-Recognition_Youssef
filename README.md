@@ -1,7 +1,7 @@
 # 👁️ Facial Recognition using TensorFlow
 
 This project implements a **facial recognition system** that identifies and classifies human faces using a deep learning model built with **TensorFlow** and **Keras**.  
-It was developed as a collaborative effort between **Youssef Azmy** and **Omar R. Gohary**, focusing on understanding how convolutional neural networks (CNNs) can learn to recognize facial features and patterns.
+It was developed as a collaborative effort between **Youssef Azmy** **Omar R. Gohary** **Hazem Osama** **Youssef Mohamed Shaheen**, focusing on understanding how convolutional neural networks (CNNs) can learn to recognize facial features and patterns.
 
 ---
 
@@ -41,40 +41,36 @@ Facial-Recognition_Youssef/
 ├── output result.png # Example output visualization
 └── README.md # Project documentation
 
-yaml
-Copy code
 
 ---
 
 ## 🚀 How to Run
 
 1. **Clone this repository**
-   ```bash
+   
    git clone https://github.com/Azmy36/Facial-Recognition_Youssef.git
    cd Facial-Recognition_Youssef
 Install dependencies
 
-bash
-Copy code
 pip install tensorflow keras numpy matplotlib opencv-python
 Run the notebook
 
-bash
-Copy code
 jupyter notebook neuralproj.ipynb
 (Optional) Unzip the dataset before running:
 
-bash
-Copy code
 unzip dataset.zip
 📊 Sample Output
 
 👥 Contributors
 This project was collaboratively developed by:
 
-Youssef Azmy (Azmy36) — worked on project setup, model implementation, and documentation.
+Youssef Azmy (Azmy36)
 
-Omar R. Gohary (omarrgohary) — contributed to dataset preparation and initial model design.
+Omar R. Gohary (omarrgohary) 
+
+Hazem Osama
+
+Youssef Mohamed Shaheen
 
 Both contributors collaborated in building and improving the facial recognition system and exploring CNN-based image classification techniques.
 
@@ -89,9 +85,3 @@ Create a simple web interface using Flask or Streamlit for user interaction.
 This project is open-source and intended for educational and research purposes.
 Please provide credit to Youssef Azmy and Omar R. Gohary if you use or modify this work.
 
-yaml
-Copy code
-
----
-
-💡 **Tip:** When you paste it into GitHub’s editor, don’t include the outer grey box itself — just pas
