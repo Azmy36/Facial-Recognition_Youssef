@@ -1,7 +1,7 @@
 # 👁️ Facial Recognition using TensorFlow
 
 This project implements a **facial recognition system** that identifies and classifies human faces using a deep learning model built with **TensorFlow** and **Keras**.  
-It was developed as a collaborative effort between **Youssef Azmy** **Omar R. Gohary** **Hazem Osama** **Youssef Mohamed Shaheen**, focusing on understanding how convolutional neural networks (CNNs) can learn to recognize facial features and patterns.
+It was developed as a collaborative effort between **Youssef Azmy**,  **Omar R. Gohary**,  **Hazem Osama** and  **Youssef Mohamed Shaheen**, focusing on understanding how convolutional neural networks (CNNs) can learn to recognize facial features and patterns.
 
 ---
 
