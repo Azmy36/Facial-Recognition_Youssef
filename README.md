@@ -1,110 +1,97 @@
-# Facial Recognition Classifier using VGG16 and TensorFlow (Google Colab)
+# 👁️ Facial Recognition using TensorFlow
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+This project implements a **facial recognition system** that identifies and classifies human faces using a deep learning model built with **TensorFlow** and **Keras**.  
+It was developed as a collaborative effort between **Youssef Azmy** and **Omar R. Gohary**, focusing on understanding how convolutional neural networks (CNNs) can learn to recognize facial features and patterns.
 
-This project demonstrates a facial recognition system built with TensorFlow and Keras using a transfer learning approach. The model leverages the power of the pre-trained VGG16 architecture to classify celebrity faces. The entire project was developed and executed in Google Colab, using a custom dataset of 6 celebrity classes, each with approximately 100 images (600 total).
+---
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 🧠 Project Overview
 
-Features:
+The main goal of this project is to build and train a CNN model capable of:
+- Detecting and classifying faces from an image dataset.
+- Distinguishing between different individuals (e.g., celebrity faces).
+- Demonstrating how deep learning can be applied to facial recognition tasks.
 
-- Runs entirely in Google Colab
-- Uses a dataset of 600 facial images (100 per celebrity)
-- Manual 70/30 train-test split
-- Preprocessing and one-hot encoding of labels
-- Transfer learning with pre-trained VGG16
-- Fine-tuning of last layers for better performance
-- Visualizations of accuracy and loss
-- Prediction on new face images
-- Model saving (`.h5` format)
+Key stages of the work include:
+1. **Dataset Preparation:** Organizing and preprocessing facial image data.
+2. **Model Architecture:** Designing a CNN using TensorFlow and Keras.
+3. **Training & Validation:** Training the model for multiple epochs and fine-tuning hyperparameters.
+4. **Evaluation:** Measuring accuracy, loss, and visualizing performance metrics.
+5. **Output Visualization:** Displaying predictions and model outputs.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
+## ⚙️ Technologies Used
 
-Model Architecture:
+- **Python 3**
+- **TensorFlow / Keras**
+- **NumPy**
+- **Matplotlib**
+- **OpenCV (optional, for preprocessing)**
+- **Jupyter Notebook**
 
-- Base Model: VGG16 (without top layer, pretrained on ImageNet)
-- Custom Layers**:
-  - Flatten
-  - Dense(64) → BatchNorm → Dropout
-  - Dense(32) → BatchNorm
-  - Dense(16) → BatchNorm
-  - Dense(6) with `softmax` (for classification)
+---
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 📁 Repository Structure
 
-
-Dataset Structure
-
-The dataset consists of approximately **6,000 face images**, with **1,000 images per celebrity**, organized into folders by class name:
-
-dataset.zip
-└── dataset/
-├── Tom Cruise/
-├── Scarlett Johansson/
-├── Will Smith/
-├── Leonardo DiCaprio/
-├── Johnny Depp/
-└── Megan Fox/
+Facial-Recognition_Youssef/
+│
+├── neuralproj.ipynb # Main Jupyter Notebook for model training and testing
+├── dataset.zip # Compressed dataset of facial images
+├── output result.png # Example output visualization
+└── README.md # Project documentation
 
 yaml
-Copy
-Edit
+Copy code
 
-Each folder name becomes a class label. Upload the `dataset.zip` file to Colab when prompted.
+---
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## 🚀 How to Run
 
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/Azmy36/Facial-Recognition_Youssef.git
+   cd Facial-Recognition_Youssef
+Install dependencies
 
-How to Run (in Google Colab)
-
-1. Upload `dataset.zip` to Colab using the upload prompt.
-2. Run all cells to extract, preprocess, train, and evaluate the model.
-3. Modify the `img_path` at the end to predict a new face.
-4. Download the fine-tuned model (`vgg16_finetuned_model.h5`) if needed.
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Results:
-
-- Initial Training Epochs: 2
-- Fine-Tuning Epochs: 5
-- Accuracy (sample): 85–95% on validation depending on image quality
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-Example Prediction: python
-
-Predicted class: Leonardo DiCaprio
-🔧 Requirements
-Install packages via Colab:
 bash
-Copy
-Edit
-pip install tensorflow pandas
+Copy code
+pip install tensorflow keras numpy matplotlib opencv-python
+Run the notebook
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+bash
+Copy code
+jupyter notebook neuralproj.ipynb
+(Optional) Unzip the dataset before running:
 
-Future Improvements:
+bash
+Copy code
+unzip dataset.zip
+📊 Sample Output
 
-Add data augmentation for better generalization
-Improve class balancing if needed
-Deploy using Streamlit or Flask
-Add webcam support for real-time predictions
+👥 Contributors
+This project was collaboratively developed by:
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Youssef Azmy (Azmy36) — worked on project setup, model implementation, and documentation.
 
-Files:
+Omar R. Gohary (omarrgohary) — contributed to dataset preparation and initial model design.
 
-facial_recognition_colab.ipynb — full Colab-compatible notebook
-vgg16_finetuned_model.h5 — saved Keras model
-README.md — project documentation
+Both contributors collaborated in building and improving the facial recognition system and exploring CNN-based image classification techniques.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🧩 Future Improvements
+Add a real-time facial recognition feature using a webcam.
 
-License:
-This project is licensed under the MIT License.
+Expand the dataset to include more diverse facial samples.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Create a simple web interface using Flask or Streamlit for user interaction.
+
+📜 License
+This project is open-source and intended for educational and research purposes.
+Please provide credit to Youssef Azmy and Omar R. Gohary if you use or modify this work.
+
+yaml
+Copy code
+
+---
+
+💡 **Tip:** When you paste it into GitHub’s editor, don’t include the outer grey box itself — just pas
